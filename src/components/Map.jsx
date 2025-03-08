@@ -13,96 +13,14 @@ const customIcon = L.icon({
   iconAnchor: [12, 41],
 });
 
-const Map = () => {
-  const sampledata = {
-    found: true,
-    total: 47,
-    nearest: {
-      id: 889585048,
-      name: "Rite Aid",
-      lat: 40.7121643,
-      lon: -74.0150269,
-      address: "Address not available",
-      phone: "Not available",
-      website: null,
-      opening_hours: "Not available",
-    },
-    all: [
-      {
-        id: 889585048,
-        name: "Rite Aid",
-        lat: 40.7121643,
-        lon: -74.0150269,
-        address: "Address not available",
-        phone: "Not available",
-        website: null,
-        opening_hours: "Not available",
-      },
-      {
-        id: 1272961632,
-        name: "Kings Pharmacy",
-        lat: 40.7160601,
-        lon: -74.0093501,
-        address: "5 Hudson Street, New York",
-        phone: "Not available",
-        website: null,
-        opening_hours: "Not available",
-      },
-      {
-        id: 1272961636,
-        name: "Duane Reade",
-        lat: 40.7062064,
-        lon: -74.0132627,
-        address: "37 Broadway, New York",
-        phone: "+1 212-425-8460",
-        website:
-          "https://www.walgreens.com/locator/walgreens-37+broadway-new+york-ny-10006/id=14101",
-        opening_hours:
-          'Mo-Fr 09:00-19:00 open "Pharmacy" || Mo-Fr 07:00-21:00; Sa 09:00-18:00; Su 10:00-17:00 open "Store"',
-      },
-      {
-        id: 1272961641,
-        name: "Duane Reade",
-        lat: 40.7072059,
-        lon: -74.0096068,
-        address: "42 Pine Street, New York",
-        phone: "Not available",
-        website: null,
-        opening_hours: "Not available",
-      },
-      {
-        id: 1383571132,
-        name: "139 Center Pharmacy",
-        lat: 40.7173976,
-        lon: -74.0006546,
-        address: "139 Centre Street, New York",
-        phone: "+1 646-838-6388",
-        website: null,
-        opening_hours: "Not available",
-      },
-    ],
-  };
-
-  const [position, setPosition] = useState([40.7128, -74.006]);
+const Map = ({data, position}) => {
+ 
+  console.log(data)
   const [pharmacyData, setPharmacyData] = useState([]);
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    // if (!navigator.geolocation) {
-    //   alert("Geolocation not found");
-    //   return;
-    // }
-
-    // navigator.geolocation.getCurrentPosition(
-    //   (pos) => {
-    //     setPosition([pos.coords.latitude, pos.coords.longitude]);
-    //   },
-    //   (err) => {
-    //     console.log("Error fetching", err);
-    //     alert("Failed to fetch location.");
-    //   },
-    //   { enableHighAccuracy: true }
-    // );
+  
 
     // const result = await findNearestStore(40.7128, -74.0060);
     // console.log(result);
@@ -110,22 +28,19 @@ const Map = () => {
     // //   console.log(`Element ${index}: lat = ${item.lat}, lon = ${item.lon}`);
     // // });
 
-    setPharmacyData(sampledata.all);
+    setPharmacyData(data);
   }, []);
 
-  useEffect(() => {
-    isHovered
-  }, [isHovered]);
+
 
   // console.log(isHovered)
   return (
-    <div className="flex gap-4 mt-10">
-    <p className="relative top-10">bro</p>
+    <div className="z-0">
     <div style={{ height: "100vh", width: "100vw" }}>
       {position ? (
         <MapContainer
-          key={position} // FIX: Forces re-render when position updates
-          center={position}
+          // key={[40.7128, -74.006]} // FIX: Forces re-render when position updates
+          center={[40.7128, -74.006]}
           zoom={13}
           style={{ height: "100%", width: "100%" }}
         >
