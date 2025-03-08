@@ -1,0 +1,486 @@
+ {
+  "found": true,
+  "total": 47,
+  "nearest": {
+    "id": 889585048,
+    "name": "Rite Aid",
+    "lat": 40.7121643,
+    "lon": -74.0150269,
+    "address": "Address not available",
+    "phone": "Not available",
+    "website": null,
+    "opening_hours": "Not available"
+  },
+  "all": [
+    {
+      "id": 889585048,
+      "name": "Rite Aid",
+      "lat": 40.7121643,
+      "lon": -74.0150269,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 1272961632,
+      "name": "Kings Pharmacy",
+      "lat": 40.7160601,
+      "lon": -74.0093501,
+      "address": "5 Hudson Street, New York",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 1272961636,
+      "name": "Duane Reade",
+      "lat": 40.7062064,
+      "lon": -74.0132627,
+      "address": "37 Broadway, New York",
+      "phone": "+1 212-425-8460",
+      "website": "https://www.walgreens.com/locator/walgreens-37+broadway-new+york-ny-10006/id=14101",
+      "opening_hours": "Mo-Fr 09:00-19:00 open \"Pharmacy\" || Mo-Fr 07:00-21:00; Sa 09:00-18:00; Su 10:00-17:00 open \"Store\""
+    },
+    {
+      "id": 1272961641,
+      "name": "Duane Reade",
+      "lat": 40.7072059,
+      "lon": -74.0096068,
+      "address": "42 Pine Street, New York",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 1383571132,
+      "name": "139 Center Pharmacy",
+      "lat": 40.7173976,
+      "lon": -74.0006546,
+      "address": "139 Centre Street, New York",
+      "phone": "+1 646-838-6388",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 2047269455,
+      "name": "CVS Pharmacy",
+      "lat": 40.7102691,
+      "lon": -74.0075338,
+      "address": "129 Fulton Street, New York",
+      "phone": "+1 212-233-5023",
+      "website": "https://www.cvs.com/store-locator/cvs-pharmacy-address/129+Fulton+Street+On+The+Corner+Of+Nassau+St-New+York-NY-10038/storeid=2716",
+      "opening_hours": "00:00-24:00 open \"Store\" || Mo-Fr 08:00-21:00; Sa, Su 09:00-18:00 open \"Pharmacy\""
+    },
+    {
+      "id": 2183010459,
+      "name": "Duane Reade",
+      "lat": 40.7048889,
+      "lon": -74.0113933,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 2186614178,
+      "name": "Duane Reade",
+      "lat": 40.7046154,
+      "lon": -74.0078508,
+      "address": "95 Wall Street, New York",
+      "phone": "+1 212-363-5830",
+      "website": "https://www.walgreens.com/locator/duane+reade-95+wall+st-new+york-ny-10005/id=14126",
+      "opening_hours": "00:00-24:00 open \"Store\" ||Mo-Fr 08:00-20:00 open \"Pharmacy\""
+    },
+    {
+      "id": 2555098973,
+      "name": "All Health Pharmacy",
+      "lat": 40.7180167,
+      "lon": -73.9968998,
+      "address": "118 Mott Street,",
+      "phone": "+1-212-431-4398",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 2555098997,
+      "name": "Alrite Pharmacy",
+      "lat": 40.7177162,
+      "lon": -73.9964,
+      "address": "161 Hester Street, New York",
+      "phone": "+1-212-965-8868",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 2563985426,
+      "name": "ABC Pharmacy",
+      "lat": 40.7172445,
+      "lon": -73.9966977,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Mo-Su 09:00-19:00"
+    },
+    {
+      "id": 2563985431,
+      "name": "Tyka Pharmacy",
+      "lat": 40.7167981,
+      "lon": -73.9972219,
+      "address": "173 Canal Street,",
+      "phone": "+1-212-343-1517",
+      "website": null,
+      "opening_hours": "Mo-Su 10:00-17:30"
+    },
+    {
+      "id": 2563986243,
+      "name": "Centre Care Phamacy",
+      "lat": 40.7185822,
+      "lon": -73.999685,
+      "address": "187 Centre Street, New York",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Mo-Su 10:00-19:00"
+    },
+    {
+      "id": 2563988675,
+      "name": "Buy-Rite Pharmacy V",
+      "lat": 40.7173578,
+      "lon": -74.0006858,
+      "address": "139 Centre Street,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 2567551897,
+      "name": "Pancare Pharmacy",
+      "lat": 40.7148005,
+      "lon": -73.9972296,
+      "address": "22 Bowery,",
+      "phone": "+1-212-240-2312",
+      "website": null,
+      "opening_hours": "Mo-Fr 10:00-17:30; Sa 09:30-17:00; Su 10:00-17:00"
+    },
+    {
+      "id": 2567551905,
+      "name": "United Health Pharmacy",
+      "lat": 40.7154451,
+      "lon": -73.9975207,
+      "address": "4 Elizabeth Street,",
+      "phone": "+1-212-766-3773",
+      "website": null,
+      "opening_hours": "Mo-Sa 10:00-18:00"
+    },
+    {
+      "id": 2567551928,
+      "name": "Amazing Choice Pharmacy",
+      "lat": 40.7156098,
+      "lon": -73.99742,
+      "address": "6B Elizabeth Street,",
+      "phone": "+1-718-484-9888",
+      "website": null,
+      "opening_hours": "Mo-Su 10:00-18:00"
+    },
+    {
+      "id": 2825071727,
+      "name": "Duane Reade",
+      "lat": 40.7074625,
+      "lon": -74.0044193,
+      "address": "200 Water Street,",
+      "phone": "+1-212-825-0761",
+      "website": "https://www.walgreens.com/locator/duane+reade-200+water+st-new+york-ny-10038/id=14436",
+      "opening_hours": "Mo-Fr 09:00-13:30, 14:00-19:00; Sa 09:00-13:30, 14:00-18:00 open \"Pharmacy\" || Mo-Su 07:00-23:00 open \"Store\""
+    },
+    {
+      "id": 2826472423,
+      "name": "Confucious Pharmacy",
+      "lat": 40.714758,
+      "lon": -73.9965882,
+      "address": "25 Bowery,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 3058719812,
+      "name": "Downtown Pharmacy",
+      "lat": 40.7102494,
+      "lon": -74.0058889,
+      "address": "165 William Street, New York",
+      "phone": "Not available",
+      "website": "https://www.downtownpharmacy.com/",
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 3150138768,
+      "name": "Rite Aid",
+      "lat": 40.7118773,
+      "lon": -74.00035,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 3991220678,
+      "name": "Bayard L. C. Pharmacy",
+      "lat": 40.7155025,
+      "lon": -73.9978469,
+      "address": "62 Bayard Street, New York",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 5161825323,
+      "name": "Generation",
+      "lat": 40.7120721,
+      "lon": -73.9979191,
+      "address": "31-33 Oliver Street,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 5231704271,
+      "name": "Buy Rite Pharmacy",
+      "lat": 40.7139979,
+      "lon": -73.9978944,
+      "address": "11 Chatham Square,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 5231708183,
+      "name": "Newgen Pharmacy",
+      "lat": 40.7148055,
+      "lon": -73.9977128,
+      "address": "12A Pell Street,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 5983976274,
+      "name": "Duane Reade",
+      "lat": 40.7167457,
+      "lon": -74.0150136,
+      "address": "315 North End Avenue, New York",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Mo-Su 07:00-22:00"
+    },
+    {
+      "id": 6124317999,
+      "name": "Mulberry Pharmacy",
+      "lat": 40.7166697,
+      "lon": -73.9989872,
+      "address": "Address not available",
+      "phone": "+1-212-693-6688",
+      "website": null,
+      "opening_hours": "Mo-Fr 09:00-19:00; Sa 10:00-18:00; Su 10:00-17:00"
+    },
+    {
+      "id": 6261902487,
+      "name": "Tribeca Pharmacy",
+      "lat": 40.7198019,
+      "lon": -74.0054212,
+      "address": "3 Walker Street,",
+      "phone": "+1-212-219-2788",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 6261905356,
+      "name": "Canal Pharmacy",
+      "lat": 40.7168191,
+      "lon": -73.9982539,
+      "address": "196 Canal Street,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 6261905668,
+      "name": "Canal Street Pharmacy",
+      "lat": 40.7170677,
+      "lon": -73.9990518,
+      "address": "210 Canal Street,",
+      "phone": "+1-212-748-4900",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 7120041757,
+      "name": "ABC Pharmacy",
+      "lat": 40.7175172,
+      "lon": -74.000561,
+      "address": "139 Centre Street,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 7674035085,
+      "name": "Pharmacy Inc",
+      "lat": 40.7137853,
+      "lon": -73.9949658,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 7700147085,
+      "name": "Duane Reade",
+      "lat": 40.7192662,
+      "lon": -74.010579,
+      "address": "352 Greenwich Street, New York",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 7951278062,
+      "name": "Duane Reade",
+      "lat": 40.7153984,
+      "lon": -74.0054967,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 8098170625,
+      "name": "Manhattan Chinatown Pharmacy",
+      "lat": 40.7162886,
+      "lon": -73.9967834,
+      "address": "Address not available",
+      "phone": "+1-212-233-2833",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 8098170627,
+      "name": "18 Pharmacy",
+      "lat": 40.7159422,
+      "lon": -73.9972278,
+      "address": "18 Elizabeth Street,",
+      "phone": "+1-212-571-0027",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 8765333020,
+      "name": "Duane Reade",
+      "lat": 40.7127837,
+      "lon": -74.0077783,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 8769344517,
+      "name": "Tribeca Apothecary",
+      "lat": 40.7170037,
+      "lon": -74.0082591,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Mo-Fr 09:00-18:00; Sa,Su 12:00-18:00"
+    },
+    {
+      "id": 8804608217,
+      "name": "Duane Reade",
+      "lat": 40.707985,
+      "lon": -74.011312,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 9977939239,
+      "name": "eRxCity Pharmacy",
+      "lat": 40.7172025,
+      "lon": -73.9976732,
+      "address": "Address not available",
+      "phone": "+1-212-625-8339",
+      "website": null,
+      "opening_hours": "Mo-Su 09:30-18:30"
+    },
+    {
+      "id": 10143335870,
+      "name": "Unnamed Pharmacy",
+      "lat": 40.7173974,
+      "lon": -73.9972621,
+      "address": "102 Mott Street,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Mo-Su 09:00-18:00"
+    },
+    {
+      "id": 11084088672,
+      "name": "Duane Reade",
+      "lat": 40.7099092,
+      "lon": -74.0087643,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 11671515583,
+      "name": "Villy Kx Pharmacy",
+      "lat": 40.7180704,
+      "lon": -73.9974503,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 11738970500,
+      "name": "Peoples Pharmacy",
+      "lat": 40.7161356,
+      "lon": -73.9983132,
+      "address": "65 Mott Street,",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Mo-Su 10:00-19:00"
+    },
+    {
+      "id": 11875173524,
+      "name": "Duane Reade",
+      "lat": 40.7208441,
+      "lon": -74.0008978,
+      "address": "459 Broadway, New York",
+      "phone": "+1 212-219-2658",
+      "website": "https://www.walgreens.com/locator/walgreens-459+broadway-new+york-ny-10013/id=14408",
+      "opening_hours": "Mo-Su 07:00-23:00"
+    },
+    {
+      "id": 12007325581,
+      "name": "CVS Pharmacy",
+      "lat": 40.7145957,
+      "lon": -74.0085001,
+      "address": "140 Church Street, New York",
+      "phone": "+1-212-587-1112",
+      "website": null,
+      "opening_hours": "Not available"
+    },
+    {
+      "id": 12457125088,
+      "name": "CVS Pharmacy",
+      "lat": 40.7117306,
+      "lon": -74.0087457,
+      "address": "Address not available",
+      "phone": "Not available",
+      "website": null,
+      "opening_hours": "Mo,Tu,Th,Fr 08:00-13:30,14:00-20:00; We,Sa,Su 10:00-13:30,14:00-17:00"
+    }
+  ]
+}
