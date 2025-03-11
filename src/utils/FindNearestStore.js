@@ -5,6 +5,7 @@ export default async function findNearestStore(
   longitude,
   radius = 1000
 ) {
+
   const overpassURL = "https://overpass-api.de/api/interpreter";
 
   const query = `
@@ -21,14 +22,14 @@ export default async function findNearestStore(
 
   try {
     const response = ""
-    // await fetch(overpassURL, {
-    //   method: "POST",
+    await fetch(overpassURL, {
+      method: "POST",
 
-    //   headers: {
-    //     "Content-Type": "application/x-www-form-urlencoded",
-    //   },
-    //   body: `data=${encodeURIComponent(query)}`,
-    // });
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `data=${encodeURIComponent(query)}`,
+    });
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -54,7 +55,10 @@ export default async function findNearestStore(
           element.tags &&
           element.tags.amenity === "pharmacy"
       )
+      
       .map((element) => {
+
+        const distance = calculateDistance(latitude, longitude, element.lat, element.lon);
         return {
           id: element.id,
           name: element.tags.name || "Unnamed Pharmacy",
@@ -69,10 +73,12 @@ export default async function findNearestStore(
           phone: element.tags.phone || "Not available",
           website: element.tags.website || null,
           opening_hours: element.tags.opening_hours || "Not available",
+          distance:distance
         };
       })
       .sort((a, b) => a.distance - b.distance);
-    
+      
+      console.log("pharmacies>>", pharmacies)
       return {
         found: pharmacies.length > 0,
         total: pharmacies.length,
@@ -89,4 +95,20 @@ export default async function findNearestStore(
       error: error.message,
     };
   }
+}
+
+// To calculate distance between two positions
+function calculateDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371e3; 
+  const φ1 = lat1 * Math.PI / 180;
+  const φ2 = lat2 * Math.PI / 180;
+  const Δφ = (lat2 - lat1) * Math.PI / 180;
+  const Δλ = (lon2 - lon1) * Math.PI / 180;
+  
+  const a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+          Math.cos(φ1) * Math.cos(φ2) *
+          Math.sin(Δλ/2) * Math.sin(Δλ/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  
+  return R * c; //  in meters
 }
