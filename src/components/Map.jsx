@@ -5,6 +5,10 @@ import { useEffect, useState } from "react";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import markerShadowPng from "leaflet/dist/images/marker-shadow.png";
 import findNearestStore from "../utils/FindNearestStore";
+import 'leaflet-routing-machine';
+import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
+import { useMap } from "react-leaflet";
+import RoutingMachine from "./RoutingMachine";
 
 const customIcon = L.icon({
   iconUrl: markerIconPng,
@@ -39,6 +43,7 @@ const Map = ({ data, position }) => {
   // console.log(data)
   const [pharmacyData, setPharmacyData] = useState([]);
   const [isHovered, setIsHovered] = useState(false);
+  const [selectedStore , setSelectedStore] = useState(null)
 
   useEffect(() => {
     const fetchNearestStore = async () => {
@@ -53,6 +58,10 @@ const Map = ({ data, position }) => {
 
     setPharmacyData(data);
   }, []);
+
+  useEffect(()=>{
+    console.log(selectedStore)
+  },[selectedStore])
 
   // console.log(isHovered)
   return (
@@ -90,7 +99,9 @@ const Map = ({ data, position }) => {
             </div>
 
             {pharmacyData.map((item) => (
-              <Marker position={[item.lat, item.lon]} icon={customIcon}>
+              <Marker position={[item.lat, item.lon]} icon={customIcon} eventHandlers={{
+                click: () => setSelectedStore([item.lat, item.lon]),
+              }}>
                 <Popup className="w-72 h-44 text-gray-100 mb-10">
                   <div className="">
                     <p className="text-xl text-black ">{item.name}</p>
@@ -192,6 +203,14 @@ const Map = ({ data, position }) => {
               </Marker>
               // <p>dd</p>
             ))}
+
+            
+             {position && selectedStore && (
+              <RoutingMachine 
+                userPosition={position} 
+                destination={selectedStore} 
+              />
+            )} 
           </MapContainer>
         ) : (
           <p>Fetching location...</p> // Show message while loading
