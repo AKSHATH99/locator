@@ -66,7 +66,7 @@ const Map = ({ data, position }) => {
   // console.log(isHovered)
   return (
     <div className="z-0">
-      <div style={{ height: "100vh", width: "100vw" }}>
+      <div style={{ height: "80vh", width: "70vw" }}>
         {position ? (
           <MapContainer
             // key={[40.7128, -74.006]} // FIX: Forces re-render when position updates

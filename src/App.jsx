@@ -101,36 +101,50 @@ function App() {
 
 
   return (
-    <div className="relative gap-4">
-      <div className="p-5">
-        <div className="flex gap-2 ">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Medicine--Streamline-Kameleon" height="48" width="48"><desc>Medicine Streamline Icon: https://streamlinehq.com</desc><path fill="#92de46" d="M24.0006 48.0012c13.2553 0 24.0006 -10.7453 24.0006 -24.0006C48.0012 10.7453 37.2559 0 24.0006 0 10.7453 0 0 10.7453 0 24.0006c0 13.2553 10.7453 24.0006 24.0006 24.0006Z" stroke-width="1"></path><path fill="#000000" d="M32.7284 18.7639c0 -0.9258 -0.3678 -1.8138 -1.0225 -2.4685 -0.6546 -0.6546 -1.5426 -1.0225 -2.4685 -1.0225h-10.473c-0.9258 0 -1.8138 0.3679 -2.4685 1.0225 -0.6547 0.6547 -1.0225 1.5427 -1.0225 2.4685v15.7095c0 0.9259 0.3678 1.8139 1.0225 2.4686 0.6547 0.6546 1.5427 1.0224 2.4685 1.0224h10.473c0.9259 0 1.8139 -0.3678 2.4685 -1.0224 0.6547 -0.6547 1.0225 -1.5427 1.0225 -2.4686V18.7639Z" stroke-width="1"></path><path fill="#ffffff" fill-rule="evenodd" d="M32.7284 20.5098h-17.455v-1.3091h17.455v1.3091Zm-17.455 12.2185h17.455v1.3091h-17.455v-1.3091Z" clip-rule="evenodd" stroke-width="1"></path><path fill="#ffffff" d="M32.7284 14.3999c0 0.2314 -0.0919 0.4534 -0.2556 0.6171 -0.1637 0.1637 -0.3857 0.2556 -0.6171 0.2556H16.1462c-0.2315 0 -0.4535 -0.0919 -0.6171 -0.2556 -0.1637 -0.1637 -0.2557 -0.3857 -0.2557 -0.6171v-3.491c0 -0.2315 0.092 -0.4535 0.2557 -0.6171 0.1636 -0.1637 0.3856 -0.2557 0.6171 -0.2557h15.7095c0.2314 0 0.4534 0.092 0.6171 0.2557 0.1637 0.1636 0.2556 0.3856 0.2556 0.6171v3.491Z" stroke-width="1"></path><path fill="#ffffff" d="M28.8004 24.6191h-2.8002v-2.8003h-3.9998v2.8003h-2.8002v3.9998h2.8002v2.8002h3.9998v-2.8002h2.8002v-3.9998Z" stroke-width="1"></path></svg>
-        <p className="text-4xl font-bold ">Pharm-locator</p>
+    <div className="flex flex-col h-screen">
+      {/* Header - Fixed at top */}
+      <div className="p-4 ">
+        <div className="flex gap-2 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Medicine--Streamline-Kameleon" height="48" width="48">
+            <path fill="#92de46" d="M24.0006 48.0012c13.2553 0 24.0006 -10.7453 24.0006 -24.0006C48.0012 10.7453 37.2559 0 24.0006 0 10.7453 0 0 10.7453 0 24.0006c0 13.2553 10.7453 24.0006 24.0006 24.0006Z" strokeWidth="1"></path>
+            <path fill="#000000" d="M32.7284 18.7639c0 -0.9258 -0.3678 -1.8138 -1.0225 -2.4685 -0.6546 -0.6546 -1.5426 -1.0225 -2.4685 -1.0225h-10.473c-0.9258 0 -1.8138 0.3679 -2.4685 1.0225 -0.6547 0.6547 -1.0225 1.5427 -1.0225 2.4685v15.7095c0 0.9259 0.3678 1.8139 1.0225 2.4686 0.6547 0.6546 1.5427 1.0224 2.4685 1.0224h10.473c0.9259 0 1.8139 -0.3678 2.4685 -1.0224 0.6547 -0.6547 1.0225 -1.5427 1.0225 -2.4686V18.7639Z" strokeWidth="1"></path>
+            <path fill="#ffffff" fillRule="evenodd" d="M32.7284 20.5098h-17.455v-1.3091h17.455v1.3091Zm-17.455 12.2185h17.455v1.3091h-17.455v-1.3091Z" clipRule="evenodd" strokeWidth="1"></path>
+            <path fill="#ffffff" d="M32.7284 14.3999c0 0.2314 -0.0919 0.4534 -0.2556 0.6171 -0.1637 0.1637 -0.3857 0.2556 -0.6171 0.2556H16.1462c-0.2315 0 -0.4535 -0.0919 -0.6171 -0.2556 -0.1637 -0.1637 -0.2557 -0.3857 -0.2557 -0.6171v-3.491c0 -0.2315 0.092 -0.4535 0.2557 -0.6171 0.1636 -0.1637 0.3856 -0.2557 0.6171 -0.2557h15.7095c0.2314 0 0.4534 0.092 0.6171 0.2557 0.1637 0.1636 0.2556 0.3856 0.2556 0.6171v3.491Z" strokeWidth="1"></path>
+            <path fill="#ffffff" d="M28.8004 24.6191h-2.8002v-2.8003h-3.9998v2.8003h-2.8002v3.9998h2.8002v2.8002h3.9998v-2.8002h2.8002v-3.9998Z" strokeWidth="1"></path>
+          </svg>
+          <p className="text-4xl font-bold">Pharm-locator</p>
         </div>
-        <p className="text-xl  text-gray-400 my-3">Find the nearest medical stores near you in a go  !</p>
-
+        <p className="text-xl text-gray-400 my-3">Find the nearest medical stores near you in a go!</p>
+        <p className="text-sm text-gray-400">Developed by <a href="https://akshathp.xyz/" target="_blank"><span className="underline">akshath</span></a></p>
+      </div>
+      
+      {/* Main content area - Sidebar and Map */}
+      <div className="flex flex-1 overflow-hidden">
+        {/* Sidebar - Fixed on left */}
+        <div className={`${openSideBar ? 'w-1/4 min-w-64' : 'w-0'} transition-all duration-300 border-r`}>
+          {openSideBar && (
+            <div className="h-full overflow-auto p-4">
+              <SideBar data={sampledata.all} />
+            </div>
+          )}
+        </div>
         
-        <p className="text-sm  text-gray-400">Developed by  <a href="https://akshathp.xyz/" target="_blank"> <span  className="underline" >akshath</span></a> </p>
-      </div>
-      <div className="flex z-50 absolute top-20   ">
-        {openSideBar ? (
-          <div className="bg-white flex flex-col w-1/2 max-h-[500px] p-4 border rounded-lg shadow-sm overflow-auto">
-            <SideBar data={sampledata.all} />
+        {/* Toggle sidebar button */}
+        <div className="flex items-center">
+          <div
+            className="border border-red-950 p-2 bg-white rounded-r-lg hover:cursor-pointer"
+            onClick={() => {
+              setOpenSidebar(!openSideBar);
+            }}
+          >
+            <img className="w-3 h-4" src={arrow} alt="Toggle sidebar" />
           </div>
-        ) : (
-          ""
-        )}
-        <div
-          className="border border-red-950 w-max h-max p-2 z-50   bg-white rounded-r-lg hover:cursor-pointer"
-          onClick={() => {
-            setOpenSidebar(!openSideBar);
-          }}
-        >
-          <img className="w-3 h-4" src={arrow} />
         </div>
-      </div>
-      <div className="relative z-0">
-        <Map data={sampledata.all} position={[40.7128, -74.006]} />
+        
+        {/* Map area - Takes remaining space */}
+        <div className="flex-1 ">
+          <Map data={sampledata.all} position={[40.7128, -74.006]} />
+        </div>
       </div>
     </div>
   );
