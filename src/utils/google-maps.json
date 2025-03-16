@@ -1,0 +1,977 @@
+{
+    name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew",
+    id: "ChIJ10_aSxlawokR-lIaWRbx5ew",
+    types: [
+       "pharmacy",
+       "health",
+       "store",
+       "point_of_interest",
+       "establishment"
+    ],
+    nationalPhoneNumber: "(212) 233-1705",
+    internationalPhoneNumber: "+1 212-233-1705",
+    formattedAddress: "255 Greenwich St, New York, NY 10007, USA",
+    addressComponents: [
+       {
+          longText: "255",
+          shortText: "255",
+          types: [
+             "street_number"
+          ],
+          languageCode: "en-US"
+       },
+       {
+          longText: "Greenwich Street",
+          shortText: "Greenwich St",
+          types: [
+             "route"
+          ],
+          languageCode: "en"
+       },
+       {
+          longText: "Manhattan",
+          shortText: "Manhattan",
+          types: [
+             "sublocality_level_1",
+             "sublocality",
+             "political"
+          ],
+          languageCode: "en"
+       },
+       {
+          longText: "New York",
+          shortText: "New York",
+          types: [
+             "locality",
+             "political"
+          ],
+          languageCode: "en"
+       },
+       {
+          longText: "New York County",
+          shortText: "New York County",
+          types: [
+             "administrative_area_level_2",
+             "political"
+          ],
+          languageCode: "en"
+       },
+       {
+          longText: "New York",
+          shortText: "NY",
+          types: [
+             "administrative_area_level_1",
+             "political"
+          ],
+          languageCode: "en"
+       },
+       {
+          longText: "United States",
+          shortText: "US",
+          types: [
+             "country",
+             "political"
+          ],
+          languageCode: "en"
+       },
+       {
+          longText: "10007",
+          shortText: "10007",
+          types: [
+             "postal_code"
+          ],
+          languageCode: "en-US"
+       }
+    ],
+    plusCode: {
+       globalCode: "87G7PX7Q+QF",
+       compoundCode: "PX7Q+QF New York, NY, USA"
+    },
+    location: {
+       latitude: 40.714402,
+       longitude: -74.0112668
+    },
+    viewport: {
+       low: {
+          latitude: 40.7131961697085,
+          longitude: -74.0126829802915
+       },
+       high: {
+          latitude: 40.7158941302915,
+          longitude: -74.0099850197085
+       }
+    },
+    rating: 3.5,
+    googleMapsUri: "https://maps.google.com/?cid=17070315040904205050",
+    websiteUri: "https://www.cvs.com/store-locator/new-york-ny-pharmacies/255-greenwich-st-btwn-murray-st-and-park-pl-new-york-ny-10007/storeid=17688?WT.mc_id=LS_GOOGLE_RX_17688",
+    regularOpeningHours: {
+       openNow: false,
+       periods: [
+          {
+             open: {
+                day: 0,
+                hour: 11,
+                minute: 0
+             },
+             close: {
+                day: 0,
+                hour: 13,
+                minute: 30
+             }
+          },
+          {
+             open: {
+                day: 0,
+                hour: 14,
+                minute: 0
+             },
+             close: {
+                day: 0,
+                hour: 17,
+                minute: 0
+             }
+          },
+          {
+             open: {
+                day: 1,
+                hour: 10,
+                minute: 0
+             },
+             close: {
+                day: 1,
+                hour: 13,
+                minute: 30
+             }
+          },
+          {
+             open: {
+                day: 1,
+                hour: 14,
+                minute: 0
+             },
+             close: {
+                day: 1,
+                hour: 20,
+                minute: 0
+             }
+          },
+          {
+             open: {
+                day: 2,
+                hour: 10,
+                minute: 0
+             },
+             close: {
+                day: 2,
+                hour: 13,
+                minute: 30
+             }
+          },
+          {
+             open: {
+                day: 2,
+                hour: 14,
+                minute: 0
+             },
+             close: {
+                day: 2,
+                hour: 20,
+                minute: 0
+             }
+          },
+          {
+             open: {
+                day: 3,
+                hour: 10,
+                minute: 0
+             },
+             close: {
+                day: 3,
+                hour: 13,
+                minute: 30
+             }
+          },
+          {
+             open: {
+                day: 3,
+                hour: 14,
+                minute: 0
+             },
+             close: {
+                day: 3,
+                hour: 20,
+                minute: 0
+             }
+          },
+          {
+             open: {
+                day: 4,
+                hour: 10,
+                minute: 0
+             },
+             close: {
+                day: 4,
+                hour: 13,
+                minute: 30
+             }
+          },
+          {
+             open: {
+                day: 4,
+                hour: 14,
+                minute: 0
+             },
+             close: {
+                day: 4,
+                hour: 20,
+                minute: 0
+             }
+          },
+          {
+             open: {
+                day: 5,
+                hour: 10,
+                minute: 0
+             },
+             close: {
+                day: 5,
+                hour: 13,
+                minute: 30
+             }
+          },
+          {
+             open: {
+                day: 5,
+                hour: 14,
+                minute: 0
+             },
+             close: {
+                day: 5,
+                hour: 20,
+                minute: 0
+             }
+          },
+          {
+             open: {
+                day: 6,
+                hour: 10,
+                minute: 0
+             },
+             close: {
+                day: 6,
+                hour: 13,
+                minute: 30
+             }
+          },
+          {
+             open: {
+                day: 6,
+                hour: 14,
+                minute: 0
+             },
+             close: {
+                day: 6,
+                hour: 18,
+                minute: 0
+             }
+          }
+       ],
+       weekdayDescriptions: [
+          "Monday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Tuesday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Wednesday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Thursday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Friday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Saturday: 10:00 AM – 1:30 PM, 2:00 – 6:00 PM",
+          "Sunday: 11:00 AM – 1:30 PM, 2:00 – 5:00 PM"
+       ],
+       nextOpenTime: "2025-03-16T15:00:00Z"
+    },
+    utcOffsetMinutes: -240,
+    adrFormatAddress: "<span class="street-address">255 Greenwich St</span>, <span class="locality">New York</span>, <span class="region">NY</span> <span class="postal-code">10007</span>, <span class="country-name">USA</span>",
+    businessStatus: "OPERATIONAL",
+    userRatingCount: 60,
+    iconMaskBaseUri: "https://maps.gstatic.com/mapfiles/place_api/icons/v2/pharmacy_pinlet",
+    iconBackgroundColor: "#F88181",
+    displayName: {
+       text: "CVS Pharmacy",
+       languageCode: "en"
+    },
+    primaryTypeDisplayName: {
+       text: "Pharmacy",
+       languageCode: "en-US"
+    },
+    delivery: true,
+    curbsidePickup: false,
+    currentOpeningHours: {
+       openNow: false,
+       periods: [
+          {
+             open: {
+                day: 0,
+                hour: 11,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 16
+                }
+             },
+             close: {
+                day: 0,
+                hour: 13,
+                minute: 30,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 16
+                }
+             }
+          },
+          {
+             open: {
+                day: 0,
+                hour: 14,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 16
+                }
+             },
+             close: {
+                day: 0,
+                hour: 17,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 16
+                }
+             }
+          },
+          {
+             open: {
+                day: 1,
+                hour: 10,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 17
+                }
+             },
+             close: {
+                day: 1,
+                hour: 13,
+                minute: 30,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 17
+                }
+             }
+          },
+          {
+             open: {
+                day: 1,
+                hour: 14,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 17
+                }
+             },
+             close: {
+                day: 1,
+                hour: 20,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 17
+                }
+             }
+          },
+          {
+             open: {
+                day: 2,
+                hour: 10,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 18
+                }
+             },
+             close: {
+                day: 2,
+                hour: 13,
+                minute: 30,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 18
+                }
+             }
+          },
+          {
+             open: {
+                day: 2,
+                hour: 14,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 18
+                }
+             },
+             close: {
+                day: 2,
+                hour: 20,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 18
+                }
+             }
+          },
+          {
+             open: {
+                day: 3,
+                hour: 10,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 19
+                }
+             },
+             close: {
+                day: 3,
+                hour: 13,
+                minute: 30,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 19
+                }
+             }
+          },
+          {
+             open: {
+                day: 3,
+                hour: 14,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 19
+                }
+             },
+             close: {
+                day: 3,
+                hour: 20,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 19
+                }
+             }
+          },
+          {
+             open: {
+                day: 4,
+                hour: 10,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 20
+                }
+             },
+             close: {
+                day: 4,
+                hour: 13,
+                minute: 30,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 20
+                }
+             }
+          },
+          {
+             open: {
+                day: 4,
+                hour: 14,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 20
+                }
+             },
+             close: {
+                day: 4,
+                hour: 20,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 20
+                }
+             }
+          },
+          {
+             open: {
+                day: 5,
+                hour: 10,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 21
+                }
+             },
+             close: {
+                day: 5,
+                hour: 13,
+                minute: 30,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 21
+                }
+             }
+          },
+          {
+             open: {
+                day: 5,
+                hour: 14,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 21
+                }
+             },
+             close: {
+                day: 5,
+                hour: 20,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 21
+                }
+             }
+          },
+          {
+             open: {
+                day: 6,
+                hour: 10,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 15
+                }
+             },
+             close: {
+                day: 6,
+                hour: 13,
+                minute: 30,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 15
+                }
+             }
+          },
+          {
+             open: {
+                day: 6,
+                hour: 14,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 15
+                }
+             },
+             close: {
+                day: 6,
+                hour: 18,
+                minute: 0,
+                date: {
+                   year: 2025,
+                   month: 3,
+                   day: 15
+                }
+             }
+          }
+       ],
+       weekdayDescriptions: [
+          "Monday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Tuesday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Wednesday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Thursday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Friday: 10:00 AM – 1:30 PM, 2:00 – 8:00 PM",
+          "Saturday: 10:00 AM – 1:30 PM, 2:00 – 6:00 PM",
+          "Sunday: 11:00 AM – 1:30 PM, 2:00 – 5:00 PM"
+       ],
+       nextOpenTime: "2025-03-16T15:00:00Z"
+    },
+    primaryType: "pharmacy",
+    shortFormattedAddress: "255 Greenwich St, New York",
+    editorialSummary: {
+       text: "Drugstore chain selling a variety of beauty & health products, plus some grocery & household items.",
+       languageCode: "en"
+    },
+    reviews: [
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/reviews/ChZDSUhNMG9nS0VJQ0FnTURRN1B1SmF3EAE",
+          relativePublishTimeDescription: "in the last week",
+          rating: 2,
+          text: {
+             text: "This pharmacy is very difficult to get to. The service was nice, but next to impossible to get a hold of anyone in the pharmacy with an automated system that locks an individual out unless they are willing to leave a voicemail to ask questions and then have them answered with a text.\n\nThe location has hidden or full parking and is a nightmare on Hollywood Boulevard.\n\nJust difficult in every sense and while it was the closest CVS to home, I won't be calling another prescription into this location.",
+             languageCode: "en"
+          },
+          originalText: {
+             text: "This pharmacy is very difficult to get to. The service was nice, but next to impossible to get a hold of anyone in the pharmacy with an automated system that locks an individual out unless they are willing to leave a voicemail to ask questions and then have them answered with a text.\n\nThe location has hidden or full parking and is a nightmare on Hollywood Boulevard.\n\nJust difficult in every sense and while it was the closest CVS to home, I won't be calling another prescription into this location.",
+             languageCode: "en"
+          },
+          authorAttribution: {
+             displayName: "Brice Oates",
+             uri: "https://www.google.com/maps/contrib/100241510661090733594/reviews",
+             photoUri: "https://lh3.googleusercontent.com/a-/ALV-UjUN_zT7PHJLlpnjUhhuQzyXUBGz7iAWWkUPorj4uDAvppB4O0CNJw=s128-c0x00000000-cc-rp-mo-ba2"
+          },
+          publishTime: "2025-03-09T15:45:41.755944Z",
+          flagContentUri: "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnTURRN1B1SmF3EAE&d=17924085&t=1",
+          googleMapsUri: "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTURRN1B1SmF3EAE!2m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/reviews/ChZDSUhNMG9nS0VJQ0FnSURqX2FuNUh3EAE",
+          relativePublishTimeDescription: "10 months ago",
+          rating: 1,
+          text: {
+             text: "The pharmacy never picks up the phone.  I was on hold for 40 min when I decided to walk there.  I get there - there are no lines, 3 employees working and the phone was purposefully left off the hook.  I was still on hold when I was at the counter.  I asked if they normally just leave the phone off the hook as I’ve been on hold for over 45 min and still holding (as I’m talking to the employee live).  They apologized and said no they normally pick up - but that is not the case.  Have spent another 2 times trying to reach them via phone and on hold for over 30 min each time.  Will be looking for a new pharmacy….",
+             languageCode: "en"
+          },
+          originalText: {
+             text: "The pharmacy never picks up the phone.  I was on hold for 40 min when I decided to walk there.  I get there - there are no lines, 3 employees working and the phone was purposefully left off the hook.  I was still on hold when I was at the counter.  I asked if they normally just leave the phone off the hook as I’ve been on hold for over 45 min and still holding (as I’m talking to the employee live).  They apologized and said no they normally pick up - but that is not the case.  Have spent another 2 times trying to reach them via phone and on hold for over 30 min each time.  Will be looking for a new pharmacy….",
+             languageCode: "en"
+          },
+          authorAttribution: {
+             displayName: "Hula B.",
+             uri: "https://www.google.com/maps/contrib/102959125575358765109/reviews",
+             photoUri: "https://lh3.googleusercontent.com/a/ACg8ocK445JUsvtxE57LWO-7rwpVJTzuwLYbLk-s7I8pXMWpa0Vj=s128-c0x00000000-cc-rp-mo"
+          },
+          publishTime: "2024-05-06T19:05:21.249133Z",
+          flagContentUri: "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURqX2FuNUh3EAE&d=17924085&t=1",
+          googleMapsUri: "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURqX2FuNUh3EAE!2m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/reviews/ChdDSUhNMG9nS0VJQ0FnSURtM043UGtnRRAB",
+          relativePublishTimeDescription: "3 years ago",
+          rating: 1,
+          text: {
+             text: "Waited 15 minutes on line before deciding to leave before risking me late for an appointment while there was still a line of people in front of me, mostly purchasing items and not even picking up prescriptions. One cashier two registers and one employee trying yet failing to hide behind the stack of medications and failing. GREAT customer service guys definitely really helpful. Unfortunately will have to go without my medication tonight and try AGAIN tommorrow. Definitely switching my pharmacy after this.",
+             languageCode: "en"
+          },
+          originalText: {
+             text: "Waited 15 minutes on line before deciding to leave before risking me late for an appointment while there was still a line of people in front of me, mostly purchasing items and not even picking up prescriptions. One cashier two registers and one employee trying yet failing to hide behind the stack of medications and failing. GREAT customer service guys definitely really helpful. Unfortunately will have to go without my medication tonight and try AGAIN tommorrow. Definitely switching my pharmacy after this.",
+             languageCode: "en"
+          },
+          authorAttribution: {
+             displayName: "Angel Tavarez",
+             uri: "https://www.google.com/maps/contrib/104528440381122331395/reviews",
+             photoUri: "https://lh3.googleusercontent.com/a/ACg8ocKzqsNBu8jVt8FxnS5qxtnHJrz0WPrJxz4BzXoEZjL8f7Zcaw=s128-c0x00000000-cc-rp-mo"
+          },
+          publishTime: "2022-01-21T22:52:14.991139Z",
+          flagContentUri: "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURtM043UGtnRRAB&d=17924085&t=1",
+          googleMapsUri: "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURtM043UGtnRRAB!2m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/reviews/ChZDSUhNMG9nS0VJQ0FnSUM2OV9QTGF3EAE",
+          relativePublishTimeDescription: "3 years ago",
+          rating: 1,
+          text: {
+             text: "Terrible pharmacy\n\nI needed to speak to a pharmacist. I called five times in succession and kept getting put on hold. No one picked up the phone. Finally I gave up. I have used this pharmacy for several years and had found the pharmacist to be very helpful. The current staff should be fired. However in the future, I’m not going to put myself through the torture of trying to fill prescriptions here. I will find somewhere else.",
+             languageCode: "en"
+          },
+          originalText: {
+             text: "Terrible pharmacy\n\nI needed to speak to a pharmacist. I called five times in succession and kept getting put on hold. No one picked up the phone. Finally I gave up. I have used this pharmacy for several years and had found the pharmacist to be very helpful. The current staff should be fired. However in the future, I’m not going to put myself through the torture of trying to fill prescriptions here. I will find somewhere else.",
+             languageCode: "en"
+          },
+          authorAttribution: {
+             displayName: "TereseL11",
+             uri: "https://www.google.com/maps/contrib/113026419050901699695/reviews",
+             photoUri: "https://lh3.googleusercontent.com/a-/ALV-UjXY_nTuApSn6R8B2wRGSey3-wzf-FY7xdC5SGGFzKKVBF4-MIsm=s128-c0x00000000-cc-rp-mo"
+          },
+          publishTime: "2021-09-15T18:20:18.237587Z",
+          flagContentUri: "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUM2OV9QTGF3EAE&d=17924085&t=1",
+          googleMapsUri: "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM2OV9QTGF3EAE!2m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/reviews/ChZDSUhNMG9nS0VJQ0FnTURBd0pUa1BBEAE",
+          relativePublishTimeDescription: "a month ago",
+          rating: 5,
+          text: {
+             text: "The CVS at Target in TriBeCa is a great one",
+             languageCode: "en"
+          },
+          originalText: {
+             text: "The CVS at Target in TriBeCa is a great one",
+             languageCode: "en"
+          },
+          authorAttribution: {
+             displayName: "paddington matz",
+             uri: "https://www.google.com/maps/contrib/106057908365303354793/reviews",
+             photoUri: "https://lh3.googleusercontent.com/a-/ALV-UjVgOzuBRkKozi_10Sm6GitOHAcwZ4xnqE1iU0P4DuPJfGJrokc=s128-c0x00000000-cc-rp-mo"
+          },
+          publishTime: "2025-02-06T02:28:55.874361Z",
+          flagContentUri: "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnTURBd0pUa1BBEAE&d=17924085&t=1",
+          googleMapsUri: "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTURBd0pUa1BBEAE!2m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       }
+    ],
+    photos: [
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/photos/AUy1YQ3Y8u1uBHvnlOLiLN7CfrzPzFhRiLIBADgJc3E045rtX4ghmiSrHuK8g0BUD0WLNPDpP_M8mtPmU-FFGnAer_yNezpItNcvNyL6CN8jr5Bg4hfuydv6SrEvFUoYW3oE0YGOAyt1lJ4ybIL44SPgvAsUMGT3ZcIKQrqXS5StgZp9ANWEETFm5OttQiHKIGCVh-5zzNAkGk_8y4DO-Gi4CzUV6RQb9caD0G4RDqCMfxDMusbxFjzSkn_tkCxmRONwaoeiH_7H4KikvU7Mh6UzvhbO49bY9mu8M-fkDl7sHnj1BAs_MvNE_r9DykuAD2n0awBcEYQmA1NnuAd-7m7qFjlKPksbozehSlskw28lbVE391zhRDNokduNyL-I25rr2i49d1MmZOiUkSiMpTaRqKcHBW923gseZwM4QdFhYgas4Q8",
+          widthPx: 1000,
+          heightPx: 1000,
+          authorAttributions: [
+             {
+                displayName: "Lazarus",
+                uri: "https://maps.google.com/maps/contrib/104692354784784019316",
+                photoUri: "https://lh3.googleusercontent.com/a-/ALV-UjWXRJYXoACCTloYLQ9czBEBlGJMvcVYNC7LNedDauUcWNevomzz=s100-p-k-no-mo"
+             }
+          ],
+          flagContentUri: "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDFk8yFrgE&hl=en-US",
+          googleMapsUri: "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDFk8yFrgE!2e10!4m2!3m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/photos/AUy1YQ0nAqRxlbQW4UDuy6eOzmBFq5JYPpDrzSbllbcNJcN4PuLlF90XTwMz_Drqm1aEtPcccBUCHsukgm45dabooTNvJmUn7X2JeSZ3UWJ-_zpg_S7ofCZDhYIxMcSfrDp2GqLsoyAHKTgFTpTB7tyFoh1jT3l4O-zyaLj-qVvnTaIoi7VMsSsIUy7Ei7CyObxkcRR-9nrX3ahgOQBgCbiTEGjinBtFCbpkaozgvQtiVjs4BcG8qsayPocrZkfW72IkaKyRHfRykvt13jvHMy_bqse-CCzXGH82ehG1RrI5yi2BiQ",
+          widthPx: 720,
+          heightPx: 480,
+          authorAttributions: [
+             {
+                displayName: "CVS Pharmacy",
+                uri: "https://maps.google.com/maps/contrib/107931038987936270724",
+                photoUri: "https://lh3.googleusercontent.com/a/ACg8ocLKV9n6tLbbqjQLGARdzyA8wh_Ah-a03NMNIy6Z4Pe9bTQ2Nw=s100-p-k-no-mo"
+             }
+          ],
+          flagContentUri: "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipP5JBrdkNMmPBG0Ya5Qi9XjtIM6pirw71-biJFf&hl=en-US",
+          googleMapsUri: "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipP5JBrdkNMmPBG0Ya5Qi9XjtIM6pirw71-biJFf!2e10!4m2!3m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/photos/AUy1YQ3mL6yvrLdGobbSsPOo1HDDv0ebC2bs5FzJpNLK3hluxQIDOmEStex-ZW3dAZTc3MyzId1jRJMneSbf-JHUhXA6Y9-0XC9F5eT1JQ4-tfOrKabbz6IfAl8JWI0fyDBcrLP29dKhmnBGU58F9Ng2RWw1-_BuQ-yn41cwEFi940G30ipel5CtPqEqeczATpOt1a9NH4XbFbuvLmKc23Sn7dHG_4yF0DfmA0AcMyiRpbfA-wVhrcL6yz6_qDXitzCHUaj-rV1KPAkapkMKvYqELY1xqtN3C_fDgWfUA-aoQWEStA",
+          widthPx: 1000,
+          heightPx: 667,
+          authorAttributions: [
+             {
+                displayName: "CVS Pharmacy",
+                uri: "https://maps.google.com/maps/contrib/107931038987936270724",
+                photoUri: "https://lh3.googleusercontent.com/a/ACg8ocLKV9n6tLbbqjQLGARdzyA8wh_Ah-a03NMNIy6Z4Pe9bTQ2Nw=s100-p-k-no-mo"
+             }
+          ],
+          flagContentUri: "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipPCvtkp0PFhRr0Q-Dvl7BmM_8nq4zK8Z-pL6lek&hl=en-US",
+          googleMapsUri: "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipPCvtkp0PFhRr0Q-Dvl7BmM_8nq4zK8Z-pL6lek!2e10!4m2!3m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/photos/AUy1YQ0tQTvOpxV_amx-DWBUZXArLhpspLSrbQDVJQkTzNduJ1Tjm6XRqFt8JiIMiEGfqshsrsIOLngmsGMLlNy2H2OirmZmRM5XaknpoBCnso_Ch6Eka6Krq0-NgOYnBjAcSzR23poEnOCyrO7K2P0l0WlZgTeW_gtwKK6dEFA2pSZrGV1v3mr0Gpb4RSEXDOFxqqmELiqqnAGfr3nRqpduiVHnGme3iXODNlXn34vH0codJSNlWNjDqeoOzKyyj3lcNwQW75aDsusyYncg_3_UHZHm1mLR48bj1jSIbqEeSZ9tRw",
+          widthPx: 720,
+          heightPx: 480,
+          authorAttributions: [
+             {
+                displayName: "CVS Pharmacy",
+                uri: "https://maps.google.com/maps/contrib/107931038987936270724",
+                photoUri: "https://lh3.googleusercontent.com/a/ACg8ocLKV9n6tLbbqjQLGARdzyA8wh_Ah-a03NMNIy6Z4Pe9bTQ2Nw=s100-p-k-no-mo"
+             }
+          ],
+          flagContentUri: "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipM0TWVZlEsaz5HpbbDN8snD-qsI-Mq5OJzzofKb&hl=en-US",
+          googleMapsUri: "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipM0TWVZlEsaz5HpbbDN8snD-qsI-Mq5OJzzofKb!2e10!4m2!3m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/photos/AUy1YQ3TDounlHff5rt5gz1gNaDwRv_fFG7f7nOlTnNR9hUfzpR_fvDhN39BiM5lM5sXx6Wt5aTxjeVNiarVp-B6vUJeqn9Avc2yucMWY4vDhOBbIMud1VGmkfZjK1qEAgye6eCDbhy8kCri6fGZCOyp_L2SY4QODkk_FTkuFuNUpK3540qQ3DrX68CFVDB-suw-uAuXKf4wdNMA_h3OvtFe4VKcNqZaPKsH6i3D3HqQ_RLfXKjPVJpXXkjBrNklFD4zLq63UHtN89dPRMPJygh5UA6w7H-kh33B_WnrnzUiekfkJQ",
+          widthPx: 1000,
+          heightPx: 1000,
+          authorAttributions: [
+             {
+                displayName: "CVS Pharmacy",
+                uri: "https://maps.google.com/maps/contrib/107931038987936270724",
+                photoUri: "https://lh3.googleusercontent.com/a/ACg8ocLKV9n6tLbbqjQLGARdzyA8wh_Ah-a03NMNIy6Z4Pe9bTQ2Nw=s100-p-k-no-mo"
+             }
+          ],
+          flagContentUri: "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipMkSS6Hh-fBeukw3sxC73j3x7lTD4MK9BX_c5kd&hl=en-US",
+          googleMapsUri: "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMkSS6Hh-fBeukw3sxC73j3x7lTD4MK9BX_c5kd!2e10!4m2!3m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       },
+       {
+          name: "places/ChIJ10_aSxlawokR-lIaWRbx5ew/photos/AUy1YQ2IV5N1SFx2zpVPPK9FvyeS04Yr8s1_WQtLlWcbon4ntkeLihlyIjCrBIFAXkxX4_UZSuUbkehl54xWUsa19sX5NvSGsnazbj5SDx0pmWAKXVSzvOVVGgp6s7vSpcWeUrpUWUox-pRFGDccCFZEVcL0KuG2ltioZdu5v__r1kwTjq4qMT4NG0zSvv3oonEMZ7bddVhsAnpu1rIQb1H-P70S5aSEv92lSEuUtJIABDLI-SNSMI0Mx3QmMZZa5KoLaalCtDlvc0GwSe_cZmWzLeZbidXXRT5Df2OQYHC-1E4eFv4HisXP_z-dzNUQ3Cnr1oNXeua3g7MaRRZsLfBjRkfYAmoaNP7_EkjXc5z-jyt2O87kpc3Eg6y4NV4wQ7s6OpN9N9X0oSVZsjSt1Xv1rv_pTcNsYTnKQcG66aNVzHjKwM0",
+          widthPx: 3072,
+          heightPx: 4080,
+          authorAttributions: [
+             {
+                displayName: "Donnel Johnson",
+                uri: "https://maps.google.com/maps/contrib/115793136685412501789",
+                photoUri: "https://lh3.googleusercontent.com/a-/ALV-UjUgXo9T6MHAYgBXiHHoYPhZJQFqC8Glmpqd1cgl3vilnOBoOPoL=s100-p-k-no-mo"
+             }
+          ],
+          flagContentUri: "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIChiZHWoAE&hl=en-US",
+          googleMapsUri: "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChiZHWoAE!2e10!4m2!3m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa"
+       }
+    ],
+    paymentOptions: {
+       acceptsCreditCards: true,
+       acceptsDebitCards: true,
+       acceptsCashOnly: false,
+       acceptsNfc: false
+    },
+    accessibilityOptions: {
+       wheelchairAccessibleEntrance: true
+    },
+    containingPlaces: [
+       {
+          name: "places/ChIJ10_aSxlawokR2qIEjXQ8asM",
+          id: "ChIJ10_aSxlawokR2qIEjXQ8asM"
+       }
+    ],
+    addressDescriptor: {
+       landmarks: [
+          {
+             name: "places/ChIJ10_aSxlawokR2qIEjXQ8asM",
+             placeId: "ChIJ10_aSxlawokR2qIEjXQ8asM",
+             displayName: {
+                text: "Target",
+                languageCode: "en"
+             },
+             types: [
+                "clothing_store",
+                "department_store",
+                "electronics_store",
+                "establishment",
+                "furniture_store",
+                "home_goods_store",
+                "point_of_interest",
+                "shoe_store",
+                "store"
+             ],
+             spatialRelationship: "BESIDE",
+             straightLineDistanceMeters: 52.40649,
+             travelDistanceMeters: 0.44037628
+          },
+          {
+             name: "places/ChIJl4BZ5opZwokRUR0n7MrTIEA",
+             placeId: "ChIJl4BZ5opZwokRUR0n7MrTIEA",
+             displayName: {
+                text: "Whole Foods Market",
+                languageCode: "en"
+             },
+             types: [
+                "establishment",
+                "food",
+                "grocery_or_supermarket",
+                "health",
+                "liquor_store",
+                "point_of_interest",
+                "store",
+                "supermarket"
+             ],
+             spatialRelationship: "DOWN_THE_ROAD",
+             straightLineDistanceMeters: 101.95058,
+             travelDistanceMeters: 93.76398
+          },
+          {
+             name: "places/ChIJy8jTDBtawokRB9wNyxemSw8",
+             placeId: "ChIJy8jTDBtawokRB9wNyxemSw8",
+             displayName: {
+                text: "Brookfield Place",
+                languageCode: "en"
+             },
+             types: [
+                "establishment",
+                "point_of_interest",
+                "shopping_mall",
+                "tourist_attraction"
+             ],
+             straightLineDistanceMeters: 391.78656,
+             travelDistanceMeters: 442.08542
+          },
+          {
+             name: "places/ChIJRcvoOxpawokR7R4dQMXMMPQ",
+             placeId: "ChIJRcvoOxpawokR7R4dQMXMMPQ",
+             displayName: {
+                text: "9/11 Memorial & Museum",
+                languageCode: "en"
+             },
+             types: [
+                "establishment",
+                "museum",
+                "park",
+                "point_of_interest"
+             ],
+             straightLineDistanceMeters: 383.4869,
+             travelDistanceMeters: 334.96844
+          },
+          {
+             name: "places/ChIJU8brTxlawokRaV4LZY5TrrU",
+             placeId: "ChIJU8brTxlawokRaV4LZY5TrrU",
+             displayName: {
+                text: "Fiterman Hall",
+                languageCode: "en"
+             },
+             types: [
+                "establishment",
+                "point_of_interest",
+                "university"
+             ],
+             spatialRelationship: "AROUND_THE_CORNER",
+             straightLineDistanceMeters: 85.7109,
+             travelDistanceMeters: 66.90407
+          }
+       ],
+       areas: [
+          {
+             name: "places/ChIJFaeLkx9awokRmCS-Bi9hU0U",
+             placeId: "ChIJFaeLkx9awokRmCS-Bi9hU0U",
+             displayName: {
+                text: "Tribeca",
+                languageCode: "en"
+             },
+             containment: "WITHIN"
+          },
+          {
+             name: "places/ChIJB8iKMxhawokRs5oRixSsKwA",
+             placeId: "ChIJB8iKMxhawokRs5oRixSsKwA",
+             displayName: {
+                text: "Financial District",
+                languageCode: "en"
+             },
+             containment: "WITHIN"
+          },
+          {
+             name: "places/ChIJi4MZVIhZwokRPNvWbi-c0wI",
+             placeId: "ChIJi4MZVIhZwokRPNvWbi-c0wI",
+             displayName: {
+                text: "Lower Manhattan",
+                languageCode: "en"
+             },
+             containment: "WITHIN"
+          }
+       ]
+    },
+    googleMapsLinks: {
+       directionsUri: "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x89c25a194bda4fd7:0xece5f116591a52fa!3e0",
+       placeUri: "https://maps.google.com/?cid=17070315040904205050",
+       writeAReviewUri: "https://www.google.com/maps/place//data=!4m3!3m2!1s0x89c25a194bda4fd7:0xece5f116591a52fa!12e1",
+       reviewsUri: "https://www.google.com/maps/place//data=!4m4!3m3!1s0x89c25a194bda4fd7:0xece5f116591a52fa!9m1!1b1",
+       photosUri: "https://www.google.com/maps/place//data=!4m3!3m2!1s0x89c25a194bda4fd7:0xece5f116591a52fa!10e5"
+    },
+    timeZone: {
+       id: "America/New_York"
+    }
+ }

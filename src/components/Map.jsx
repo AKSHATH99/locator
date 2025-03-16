@@ -46,15 +46,16 @@ const Map = ({ data, position }) => {
   const [selectedStore , setSelectedStore] = useState(null)
 
   useEffect(() => {
-    const fetchNearestStore = async () => {
-      const result = findNearestStore(40.7128, -74.006);
-      console.log(result);
-      sampledata.all.forEach((item, index) => {
-        console.log(`Element ${index}: lat = ${item.lat}, lon = ${item.lon}`);
-      });
-    };
+    // const fetchNearestStore = async () => {
+    //   // 18.926736, 72.833797 -> for indian map
+    //   const result = findNearestStore(40.7128, -74.006);
+    //   console.log(result);
+    //   sampledata.all.forEach((item, index) => {
+    //     console.log(`Element ${index}: lat = ${item.lat}, lon = ${item.lon}`);
+    //   });
+    // };
 
-    fetchNearestStore();
+    // fetchNearestStore();
 
     setPharmacyData(data);
   }, []);

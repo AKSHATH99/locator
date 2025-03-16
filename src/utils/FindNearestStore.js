@@ -21,7 +21,7 @@ export default async function findNearestStore(
   `;
 
   try {
-    const response = ""
+    const response = 
     await fetch(overpassURL, {
       method: "POST",
 
@@ -37,6 +37,7 @@ export default async function findNearestStore(
 
 
     const data = await response.json();
+    console.log(data)
     
     // If no pharmacies found
     if (!data.elements || data.elements.length === 0) {
