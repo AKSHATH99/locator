@@ -3,17 +3,17 @@
 export default async function findNearestStore(
   latitude,
   longitude,
-  radius = 1000
+  radius = 1000,
+  filter = "pharmacy"
 ) {
-
   const overpassURL = "https://overpass-api.de/api/interpreter";
 
   const query = `
     [out:json];
     (
-      node["amenity"="pharmacy"](around:${radius},${latitude},${longitude});
-      way["amenity"="pharmacy"](around:${radius},${latitude},${longitude});
-      relation["amenity"="pharmacy"](around:${radius},${latitude},${longitude});
+      node["amenity"=${filter}](around:${radius},${latitude},${longitude});
+      way["amenity"=${filter}](around:${radius},${latitude},${longitude});
+      relation["amenity"=${filter}](around:${radius},${latitude},${longitude});
     );
     out body;
     >;
@@ -21,7 +21,7 @@ export default async function findNearestStore(
   `;
 
   try {
-    const response = 
+    const response = ""
     await fetch(overpassURL, {
       method: "POST",
 

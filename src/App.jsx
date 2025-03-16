@@ -7,6 +7,22 @@ import Map from "./components/Map";
 import SideBar from "./components/SideBar";
 import findNearestStore from "./utils/FindNearestStore";
 
+const healthcareTags = [
+  { value: "pharmacy", label: "Pharmacy" },
+  { value: "hospital", label: "Hospital" },
+  { value: "doctors", label: "Doctors" },
+  { value: "clinic", label: "Clinic" },
+  { value: "dentist", label: "Dentist" },
+  { value: "alternative", label: "Alternative Medicine" },
+  { value: "laboratory", label: "Laboratory" },
+  { value: "physiotherapist", label: "Physiotherapist" },
+  { value: "optometrist", label: "Optometrist" },
+  { value: "rehabilitation", label: "Rehabilitation Center" },
+  { value: "blood_donation", label: "Blood Donation Center" },
+  { value: "birthing_center", label: "Birthing Center" },
+  { value: "emergency", label: "Emergency Services" },
+];
+
 function App() {
   const sampledata = {
     found: true,
@@ -80,8 +96,9 @@ function App() {
   };
   const [openSideBar, setOpenSidebar] = useState(false);
   const [position, setPosition] = useState([]);
-  const [pharmacyData, setPharmacyData] = useState([])
-  const [radius , setRadius] = useState(1000)
+  const [pharmacyData, setPharmacyData] = useState([]);
+  const [radius, setRadius] = useState(1000);
+  const [filter , setFilter] = useState()
 
   const findUserLocation = async () => {
     if (!navigator.geolocation) {
@@ -101,28 +118,26 @@ function App() {
     );
   };
 
-  useEffect(()=>{
-    findUserLocation()
-  },[])
+  useEffect(() => {
+    findUserLocation();
+  }, []);
 
-  useEffect(()=>{
 
+  useEffect(() => {
     const fetchNearestStore = async () => {
       // 18.926736, 72.833797 -> for indian map
-      console.log(position[0] ,position[1] )
-      const result =  await findNearestStore(18.926736, 72.833797,radius);
+      console.log(position[0], position[1]);
+      const result = await findNearestStore(18.926736, 72.833797, radius , filter);
       console.log(result);
-      setPharmacyData(result)
-      
+      setPharmacyData(result);
     };
 
     fetchNearestStore();
-  },[position,radius])
+  }, [position, radius, filter]);
 
-  useEffect(()=>{
-    console.log("pharmacyData>>", pharmacyData)
-  },[pharmacyData])
-
+  useEffect(() => {
+    console.log("pharmacyData>>", pharmacyData);
+  }, [pharmacyData]);
 
   return (
     <div className="h-screen w-screen bg-gray-50">
@@ -176,12 +191,16 @@ function App() {
           </div>
           <p className="text-sm text-gray-400 mt-2">
             Developed by{" "}
-            <a href="https://akshathp.xyz/" target="_blank" className="text-blue-500 hover:text-blue-700 font-medium">
+            <a
+              href="https://akshathp.xyz/"
+              target="_blank"
+              className="text-blue-500 hover:text-blue-700 font-medium"
+            >
               <span className="underline">akshath</span>
             </a>
           </p>
         </div>
-  
+
         {/* Controls Section */}
         <div className="px-6 py-4 bg-white border-t border-b border-gray-200">
           <div className="flex flex-wrap items-center gap-6">
@@ -200,7 +219,9 @@ function App() {
                 height="16"
                 width="16"
               >
-                <desc>Crosshair Line Streamline Icon: https://streamlinehq.com</desc>
+                <desc>
+                  Crosshair Line Streamline Icon: https://streamlinehq.com
+                </desc>
                 <path
                   d="M8.666666666666666 13.292066666666665c2.4124666666666665 -0.30079999999999996 4.3246 -2.212933333333333 4.6254 -4.6254H11.333333333333332v-1.3333333333333333h1.9587333333333332C12.991266666666665 4.9208533333333335 11.079133333333333 3.0087599999999997 8.666666666666666 2.7079266666666664V4.666666666666666h-1.3333333333333333V2.7079266666666664C4.9208533333333335 3.0087599999999997 3.0087599999999997 4.9208533333333335 2.7079266666666664 7.333333333333333H4.666666666666666v1.3333333333333333H2.7079266666666664C3.0087599999999997 11.079133333333333 4.9208533333333335 12.991266666666665 7.333333333333333 13.292066666666665V11.333333333333332h1.3333333333333333v1.9587333333333332ZM8 14.666666666666666C4.318099999999999 14.666666666666666 1.3333333333333333 11.681866666666666 1.3333333333333333 8 1.3333333333333333 4.318099999999999 4.318099999999999 1.3333333333333333 8 1.3333333333333333c3.6818666666666666 0 6.666666666666666 2.9847666666666663 6.666666666666666 6.666666666666666 0 3.6818666666666666 -2.9848 6.666666666666666 -6.666666666666666 6.666666666666666Zm0 -5.333333333333333c-0.7363999999999999 0 -1.3333333333333333 -0.5969333333333333 -1.3333333333333333 -1.3333333333333333s0.5969333333333333 -1.3333333333333333 1.3333333333333333 -1.3333333333333333 1.3333333333333333 0.5969333333333333 1.3333333333333333 1.3333333333333333 -0.5969333333333333 1.3333333333333333 -1.3333333333333333 1.3333333333333333Z"
                   strokeWidth="0.6667"
@@ -208,10 +229,12 @@ function App() {
               </svg>
               <span className="text-blue-700 font-medium">My location</span>
             </button>
-  
+
             {/* Radius Slider */}
             <div className="flex items-center gap-4 px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg">
-              <span className="text-gray-600 font-medium whitespace-nowrap">Radius:</span>
+              <span className="text-gray-600 font-medium whitespace-nowrap">
+                Radius:
+              </span>
               <input
                 type="range"
                 min="1000"
@@ -220,11 +243,31 @@ function App() {
                 onChange={(e) => setRadius(e.target.value)}
                 className="w-64 h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer"
               />
-              <span className="text-gray-800 font-semibold min-w-16">{radius}m</span>
+              <span className="text-gray-800 font-semibold min-w-16">
+                {radius}m
+              </span>
+            </div>
+
+            <div className="flex items-center gap-4 px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg">
+              <span className="text-gray-600 font-medium whitespace-nowrap">
+                Type:
+              </span>
+              <select
+                name="type"
+                onChange={(e) => setFilter(e.target.value)}
+                className="w-64  py-2 text-center rounded-md border cursor-pointer max-h-10 overflow-auto"
+                
+              >
+                {healthcareTags.map((tag, index) => (
+                  <option key={index} value={tag.value}>
+                    {tag.label}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
         </div>
-  
+
         {/* Main content area - Sidebar and Map */}
         <div className="flex flex-1 overflow-hidden">
           {/* Sidebar - Fixed on left */}
@@ -239,7 +282,7 @@ function App() {
               </div>
             )}
           </div>
-  
+
           {/* Toggle sidebar button */}
           <div className="flex items-center">
             <button
@@ -251,7 +294,7 @@ function App() {
               <img className="w-3 h-4" src={arrow} alt="Toggle sidebar" />
             </button>
           </div>
-  
+
           {/* Map area - Takes remaining space */}
           {position ? (
             <div className="flex-1 relative">
@@ -260,7 +303,9 @@ function App() {
           ) : (
             <div className="flex-1 flex items-center justify-center bg-gray-100">
               <div className="text-center p-6 rounded-lg bg-white shadow-md">
-                <p className="text-lg text-gray-600">Please select your location to view the map</p>
+                <p className="text-lg text-gray-600">
+                  Please select your location to view the map
+                </p>
               </div>
             </div>
           )}
