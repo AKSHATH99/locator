@@ -4,12 +4,14 @@ const SideBar = ({data}) => {
     console.log(data)
   return (
     <div>
+      {/* <p className='ml-3 text-[#92DE46]'>Results</p> */}
+      <p className='text-sm ml-3 text-gray-500'>{data.length} medical services nearby </p>
       {data.map((item) => (
         <div
           key={item.id}
           className="border-b border-gray-50 py-4 hover:bg-gray-100 hover:cursor-pointer transition-colors p-3"
         >
-          <p className="text-lg font-medium text-gray-900 mb-2">{item.name}</p>
+          <p className="text-lg font-medium text-[#92DE46] mb-2">{item.name}</p>
 
           {item.distance ? (
             <p className="flex gap-2">

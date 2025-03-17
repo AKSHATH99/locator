@@ -183,9 +183,9 @@ function App() {
               ></path>
             </svg>
             <div>
-              <p className="text-4xl font-bold text-gray-800">Pharm-locator</p>
+              <p className="text-4xl font-bold text-[#92DE46]">Pharm-locator</p>
               <p className="text-lg text-gray-500 mt-1">
-                Find the nearest medical stores near you in a go!
+                Find the nearest medical services near you in a go!
               </p>
             </div>
           </div>
@@ -213,7 +213,7 @@ function App() {
             >
               <svg
                 viewBox="0 0 16 16"
-                fill="#3b82f6"
+                fill="#92DE46"
                 xmlns="http://www.w3.org/2000/svg"
                 id="Crosshair-Line--Streamline-Remix"
                 height="16"
@@ -227,12 +227,12 @@ function App() {
                   strokeWidth="0.6667"
                 ></path>
               </svg>
-              <span className="text-blue-700 font-medium">My location</span>
+              <span className="text-[#92DE46] font-medium">My location</span>
             </button>
 
             {/* Radius Slider */}
             <div className="flex items-center gap-4 px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg">
-              <span className="text-gray-600 font-medium whitespace-nowrap">
+              <span className="text-[#92DE46] font-medium whitespace-nowrap">
                 Radius:
               </span>
               <input
@@ -249,7 +249,7 @@ function App() {
             </div>
 
             <div className="flex items-center gap-4 px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg">
-              <span className="text-gray-600 font-medium whitespace-nowrap">
+              <span className="text-[#92DE46] font-medium whitespace-nowrap">
                 Type:
               </span>
               <select

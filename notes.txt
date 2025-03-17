@@ -1,0 +1,80 @@
+for pharmacies 
+ [out:json]; (node["amenity"="hospital"](around:1000,40.7128,-74.006); way["amenity"="hospital"](around:1000,40.7128,-74.006); relation["amenity"="hospital"](around:1000,40.7128,-74.006); ); out body; >; out skel qt;
+
+
+---------------------------------------------
+ for hospitals
+
+[out:json]; 
+(
+  node["amenity"="hospital"](around:1000,40.7128,-74.006);
+  way["amenity"="hospital"](around:1000,40.7128,-74.006);
+); 
+out center;
+
+
+
+ {
+    "version": 0.6,
+    "generator": "Overpass API 0.7.62.5 1bd436f1",
+    "osm3s": {
+        "timestamp_osm_base": "2025-03-16T16:02:30Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+    },
+    "elements": [
+        {
+            "type": "way",
+            "id": 799488173,
+            "center": {
+                "lat": 40.7103064,
+                "lon": -74.0049658
+            },
+            "nodes": [
+                7477081378,
+                11347850251,
+                11347850253,
+                11347850254,
+                11347850252,
+                11347850250,
+                11347850249,
+                7477081379,
+                7477081380,
+                7477081381,
+                11347850261,
+                11347850258,
+                7477081382,
+                9338960529,
+                7477081383,
+                9338960524,
+                11347850299,
+                11347850352,
+                11347850256,
+                7477081384,
+                11347850332,
+                11347850255,
+                7477097785,
+                7477081378
+            ],
+            "tags": {
+                "addr:city": "New York",
+                "addr:housenumber": "170",
+                "addr:postcode": "10038",
+                "addr:state": "NY",
+                "addr:street": "William Street",
+                "amenity": "hospital",
+                "beds": "132",
+                "building": "yes",
+                "building:colour": "beige",
+                "building:levels": "8",
+                "building:material": "brick",
+                "emergency": "yes",
+                "healthcare": "hospital",
+                "name": "NewYork-Presbyterian Lower Manhattan Hospital",
+                "start_date": "1853",
+                "website": "https://www.nyp.org/lowermanhattan",
+                "wikidata": "Q7013458",
+                "wikipedia": "en:NewYork-Presbyterian Lower Manhattan Hospital"
+            }
+        }
+    ]
+}
