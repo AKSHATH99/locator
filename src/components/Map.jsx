@@ -43,11 +43,14 @@ const Map = ({ data, position }) => {
   const [pharmacyData, setPharmacyData] = useState([]);
   const [isHovered, setIsHovered] = useState(false);
   const [selectedStore , setSelectedStore] = useState(null)
+  const [userPosition , setUserPosition] = useState(null)
 
   useEffect(() => {
     console.log("in map component ",position)
     setPharmacyData(data);
-  }, [data]);
+    setUserPosition(position)
+    console.log("Change in positon", position)
+  }, [data , position]);
 
   useEffect(()=>{
     console.log(selectedStore)
@@ -61,7 +64,7 @@ const Map = ({ data, position }) => {
   return (
     <div className="z-0">
       <div style={{ height: "80vh", width: "70vw" }}>
-        {position ? (
+        {userPosition ? (
           <MapContainer
             // key={[40.7128, -74.006]} // FIX: Forces re-render when position updates
             center={[40.7128, -74.006]}
@@ -74,7 +77,7 @@ const Map = ({ data, position }) => {
             />
             <div className="w-10">
               <Marker
-                position={position}
+                position={userPosition}
                 icon={redIcon}
                 eventHandlers={{
                   mouseover: () => setIsHovered(true),
@@ -199,9 +202,9 @@ const Map = ({ data, position }) => {
             ))}
 
             
-             {position && selectedStore && (
+             {userPosition && selectedStore && (
               <RoutingMachine 
-                userPosition={position} 
+                userPosition={userPosition} 
                 destination={selectedStore} 
               />
             )} 
