@@ -6,6 +6,7 @@ export default async function findNearestStore(
   radius = 1000,
   filter = "pharmacy"
 ) {
+  console.log("in module >>", latitude ,longitude , radius , filter)
   const overpassURL = "https://overpass-api.de/api/interpreter";
 
   const query = `
@@ -21,7 +22,7 @@ export default async function findNearestStore(
   `;
 
   try {
-    const response = ""
+    const response = 
     await fetch(overpassURL, {
       method: "POST",
 

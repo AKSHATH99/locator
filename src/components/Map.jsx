@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import markerShadowPng from "leaflet/dist/images/marker-shadow.png";
 import findNearestStore from "../utils/FindNearestStore";
@@ -40,29 +40,22 @@ const greenIcon = new L.Icon({
 });
 
 const Map = ({ data, position }) => {
-  // console.log(data)
   const [pharmacyData, setPharmacyData] = useState([]);
   const [isHovered, setIsHovered] = useState(false);
   const [selectedStore , setSelectedStore] = useState(null)
 
   useEffect(() => {
-    // const fetchNearestStore = async () => {
-    //   // 18.926736, 72.833797 -> for indian map
-    //   const result = findNearestStore(40.7128, -74.006);
-    //   console.log(result);
-    //   sampledata.all.forEach((item, index) => {
-    //     console.log(`Element ${index}: lat = ${item.lat}, lon = ${item.lon}`);
-    //   });
-    // };
-
-    // fetchNearestStore();
-
+    console.log("in map component ",position)
     setPharmacyData(data);
-  }, []);
+  }, [data]);
 
   useEffect(()=>{
     console.log(selectedStore)
   },[selectedStore])
+
+  useEffect(()=>{
+    console.log("in map component data setted >>",pharmacyData)
+  },[pharmacyData])
 
   // console.log(isHovered)
   return (
@@ -99,7 +92,7 @@ const Map = ({ data, position }) => {
               </Marker>
             </div>
 
-            {pharmacyData.map((item) => (
+            { pharmacyData && pharmacyData.map((item) => (
               <Marker position={[item.lat, item.lon]} icon={customIcon} eventHandlers={{
                 click: () => setSelectedStore([item.lat, item.lon]),
               }}>

@@ -6,6 +6,9 @@ import "./App.css";
 import Map from "./components/Map";
 import SideBar from "./components/SideBar";
 import findNearestStore from "./utils/FindNearestStore";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Loader from "./components/Loader";
 
 const healthcareTags = [
   { value: "pharmacy", label: "Pharmacy" },
@@ -95,10 +98,23 @@ function App() {
     ],
   };
   const [openSideBar, setOpenSidebar] = useState(false);
-  const [position, setPosition] = useState([]);
+  const [position, setPosition] = useState([18.926736, 72.833797]);
   const [pharmacyData, setPharmacyData] = useState([]);
   const [radius, setRadius] = useState(1000);
-  const [filter , setFilter] = useState()
+  const [filter , setFilter] = useState();
+  const [fetching , setFetching]=useState(false);
+
+  const notify = (message) => {
+    toast.success(message, {
+      position: "top-right",
+      autoClose: 3000, 
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "dark",
+    });
+  };
 
   const findUserLocation = async () => {
     if (!navigator.geolocation) {
@@ -112,35 +128,58 @@ function App() {
       },
       (err) => {
         console.log("Error fetching", err);
-        alert("Failed to fetch location.");
+        // alert("");
+        notify("Failed to fetch location.")
       },
       { enableHighAccuracy: true }
     );
   };
 
   useEffect(() => {
+    setFetching(true)
     findUserLocation();
   }, []);
 
+  useEffect(()=>{
+    console.log(fetching)
+  },[fetching])
+
+
+  useEffect(()=>{
+    console.log(position)
+  },[position])
 
   useEffect(() => {
     const fetchNearestStore = async () => {
       // 18.926736, 72.833797 -> for indian map
-      console.log(position[0], position[1]);
-      const result = await findNearestStore(18.926736, 72.833797, radius , filter);
-      console.log(result);
-      setPharmacyData(result);
+      // console.log(position[0], position[1]);
+      if(position){
+        const result = await findNearestStore(position[0], position[1], radius , filter);
+        console.log(result.found);
+        if(!result.found){
+          console.log("no data hahah  ")
+          notify("No nearby found ")
+        }
+        setPharmacyData(result);  
+        setFetching(false)
+      }else{
+        notify("Location not fetched")
+      }
+
+      
+     
     };
 
     fetchNearestStore();
   }, [position, radius, filter]);
 
   useEffect(() => {
-    console.log("pharmacyData>>", pharmacyData);
+    console.log("pharmacyData>>", pharmacyData.found);
   }, [pharmacyData]);
 
   return (
     <div className="h-screen w-screen bg-gray-50">
+      <ToastContainer/>
       <div className="flex flex-col h-screen">
         {/* Header - Fixed at top */}
         <div className="p-6 bg-white shadow-sm">
@@ -200,9 +239,12 @@ function App() {
             </a>
           </p>
         </div>
-
         {/* Controls Section */}
         <div className="px-6 py-4 bg-white border-t border-b border-gray-200">
+        { fetching? <div className="flex gap-2 text-[#92DE46]">
+          <p>Fetching nearby medical services</p>
+          <Loader/>
+        </div> :""}
           <div className="flex flex-wrap items-center gap-6">
             {/* Location Button */}
             <button
@@ -267,7 +309,7 @@ function App() {
             </div>
           </div>
         </div>
-
+        
         {/* Main content area - Sidebar and Map */}
         <div className="flex flex-1 overflow-hidden">
           {/* Sidebar - Fixed on left */}
@@ -276,11 +318,11 @@ function App() {
               openSideBar ? "w-1/4 min-w-64" : "w-0"
             } transition-all duration-300 border-r border-gray-200 bg-white`}
           >
-            {openSideBar && (
+            {openSideBar && pharmacyData? (
               <div className="h-full overflow-auto p-4">
-                <SideBar data={sampledata.all} />
+                <SideBar data={pharmacyData.all} />
               </div>
-            )}
+            ):""}
           </div>
 
           {/* Toggle sidebar button */}
@@ -296,9 +338,9 @@ function App() {
           </div>
 
           {/* Map area - Takes remaining space */}
-          {position ? (
+          {position.length>0 && pharmacyData ? (
             <div className="flex-1 relative">
-              <Map data={sampledata.all} position={[40.7128, -74.006]} />
+              <Map data={pharmacyData.all} position={position} />
             </div>
           ) : (
             <div className="flex-1 flex items-center justify-center bg-gray-100">
