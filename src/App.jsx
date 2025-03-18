@@ -232,12 +232,13 @@ function App() {
             Developed by{" "}
             <a
               href="https://akshathp.xyz/"
-              target="_blank"
+              target="_blank" 
               className="text-blue-500 hover:text-blue-700 font-medium"
             >
               <span className="underline">akshath</span>
             </a>
           </p>
+          <p className="text-gray-400 mt-2 text-[12px]" >Please note that this website is made using <span> <a href="https://www.openstreetmap.org/">OpenStreetMap API</a> </span>  and data of some places might not be yet available</p>
         </div>
         {/* Controls Section */}
         <div className="px-6 py-4 bg-white border-t border-b border-gray-200">
