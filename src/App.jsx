@@ -101,13 +101,13 @@ function App() {
   const [position, setPosition] = useState([18.926736, 72.833797]);
   const [pharmacyData, setPharmacyData] = useState([]);
   const [radius, setRadius] = useState(1000);
-  const [filter , setFilter] = useState();
-  const [fetching , setFetching]=useState(false);
+  const [filter, setFilter] = useState("pharmacy");
+  const [fetching, setFetching] = useState(false);
 
   const notify = (message) => {
     toast.success(message, {
       position: "top-right",
-      autoClose: 3000, 
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -129,45 +129,46 @@ function App() {
       (err) => {
         console.log("Error fetching", err);
         // alert("");
-        notify("Failed to fetch location.")
+        notify("Failed to fetch location.");
       },
       { enableHighAccuracy: true }
     );
   };
 
   useEffect(() => {
-    setFetching(true)
+    setFetching(true);
     findUserLocation();
   }, []);
 
-  useEffect(()=>{
-    console.log(fetching)
-  },[fetching])
+  useEffect(() => {
+    console.log(fetching);
+  }, [fetching]);
 
-
-  useEffect(()=>{
-    console.log(position)
-  },[position])
+  useEffect(() => {
+    console.log(position);
+  }, [position]);
 
   useEffect(() => {
     const fetchNearestStore = async () => {
       // 18.926736, 72.833797 -> for indian map
       // console.log(position[0], position[1]);
-      if(position){
-        const result = await findNearestStore(position[0], position[1], radius , filter);
+      if (position) {
+        const result = await findNearestStore(
+          position[0],
+          position[1],
+          radius,
+          filter
+        );
         console.log(result.found);
-        if(!result.found){
-          console.log("no data hahah  ")
-          notify("No nearby found ")
+        if (!result.found) {
+          console.log("no data hahah  ");
+          notify(`No nearby ${filter} found`);
         }
-        setPharmacyData(result);  
-        setFetching(false)
-      }else{
-        notify("Location not fetched")
+        setPharmacyData(result);
+        setFetching(false);
+      } else {
+        notify("Location not fetched");
       }
-
-      
-     
     };
 
     fetchNearestStore();
@@ -178,20 +179,18 @@ function App() {
   }, [pharmacyData]);
 
   return (
-    <div className="h-screen w-screen bg-gray-50">
-      <ToastContainer/>
-      <div className="flex flex-col h-screen">
+    <div className="h-max w-max bg-gray-50 ">
+      <ToastContainer />
+      <div className="flex flex-col h-max">
         {/* Header - Fixed at top */}
-        <div className="p-6 bg-white shadow-sm">
-          <div className="flex gap-3 items-center">
+        <div className="md:p-4  p-1 bg-white shadow-sm">
+          <div className="flex flex-col md:flex-row gap-3 ml-4 sm:items-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 48 48"
               id="Medicine--Streamline-Kameleon"
-              height="48"
-              width="48"
-              className="drop-shadow-md"
+              className="drop-shadow-md w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16"
             >
               <path
                 fill="#92de46"
@@ -221,32 +220,51 @@ function App() {
                 strokeWidth="1"
               ></path>
             </svg>
-            <div>
-              <p className="text-4xl font-bold text-[#92DE46]">Pharm-locator</p>
-              <p className="text-lg text-gray-500 mt-1">
+            <div className=" sm:text-left">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#92DE46]">
+                Pharm-locator
+              </p>
+              <p className="text-sm sm:text-base md:text-lg text-gray-500 mt-1">
                 Find the nearest medical services near you in a go!
               </p>
             </div>
           </div>
-          <p className="text-sm text-gray-400 mt-2">
-            Developed by{" "}
-            <a
-              href="https://akshathp.xyz/"
-              target="_blank" 
-              className="text-blue-500 hover:text-blue-700 font-medium"
-            >
-              <span className="underline">akshath</span>
-            </a>
-          </p>
-          <p className="text-gray-400 mt-2 text-[12px]" >Please note that this website is made using <span> <a href="https://www.openstreetmap.org/">OpenStreetMap API</a> </span>  and data of some places might not be yet available</p>
+          <div className="mt-5 ml-4 sm:text-left">
+            <p className="text-xs sm:text-sm text-gray-400">
+              Developed by{" "}
+              <a
+                href="https://akshathp.xyz/"
+                target="_blank"
+                className="text-blue-500 hover:text-blue-700 font-medium"
+              >
+                <span className="underline">akshath</span>
+              </a>
+            </p>
+            <p className="text-[9px] text-gray-400 mt-2 max-w-prose">
+              Please note that this website is made using{" "}
+              <span>
+                <a
+                  href="https://www.openstreetmap.org/"
+                  className="hover:text-gray-600"
+                >
+                  OpenStreetMap API
+                </a>
+              </span>{" "}
+              and data of some places might not be yet available
+            </p>
+          </div>
         </div>
         {/* Controls Section */}
         <div className="px-6 py-4 bg-white border-t border-b border-gray-200">
-        { fetching? <div className="flex gap-2 text-[#92DE46]">
-          <p>Fetching nearby medical services</p>
-          <Loader/>
-        </div> :""}
-          <div className="flex flex-wrap items-center gap-6">
+          {fetching ? (
+            <div className="flex gap-2 text-[#92DE46]">
+              <p>Fetching nearby medical services</p>
+              <Loader />
+            </div>
+          ) : (
+            ""
+          )}
+          <div className="flex md:w-full w-1/2 md:items-center gap-6 sm:flex-row flex-col">
             {/* Location Button */}
             <button
               onClick={() => {
@@ -299,7 +317,6 @@ function App() {
                 name="type"
                 onChange={(e) => setFilter(e.target.value)}
                 className="w-64  py-2 text-center rounded-md border cursor-pointer max-h-10 overflow-auto"
-                
               >
                 {healthcareTags.map((tag, index) => (
                   <option key={index} value={tag.value}>
@@ -310,37 +327,50 @@ function App() {
             </div>
           </div>
         </div>
-        
+
         {/* Main content area - Sidebar and Map */}
         <div className="flex flex-1 overflow-hidden">
-          {/* Sidebar - Fixed on left */}
-          <div
-            className={`${
-              openSideBar ? "w-1/4 min-w-64" : "w-0"
-            } transition-all duration-300 border-r border-gray-200 bg-white`}
-          >
-            {openSideBar && pharmacyData? (
-              <div className="h-full overflow-auto p-4">
-                <SideBar data={pharmacyData.all} />
-              </div>
-            ):""}
-          </div>
+          {/* Sidebar - Responsive */}
+          {
+            <div
+              className={`${
+                openSideBar
+                  ? "lg:w-1/4 lg:min-w-64 w-full sm:w-1/2 md:w-1/3 absolute lg:relative z-10"
+                  : "w-0"
+              } transition-all duration-300 border-r border-gray-200 bg-white h-full  md:block hidden`}
+            >
+              {openSideBar && pharmacyData.found ? (
+                <div className="h-full overflow-auto p-4">
+                  <SideBar data={pharmacyData.all} />
+                </div>
+              ) : (
+                <div
+                  className={`${
+                    openSideBar ? "flex" : "hidden"
+                  } flex justify-center items-center gap-1 mt-10`}
+                >
+                  <img className="w-5 h-5" src="/map-error.png" />
+                  <p className="">No data found</p>
+                </div>
+              )}
+            </div>
+          }
 
-          {/* Toggle sidebar button */}
-          <div className="flex items-center">
+          {/* Toggle sidebar button - Always visible */}
+          <div className="md:flex hidden items-center">
             <button
-              className="bg-white p-2 border border-gray-200 rounded-r-lg hover:bg-gray-50 transition-colors"
+              className="bg-white p-2 border border-gray-200 rounded-r-lg hover:bg-gray-50 transition-colors z-20   "
               onClick={() => {
                 setOpenSidebar(!openSideBar);
               }}
             >
-              <img className="w-3 h-4" src={arrow} alt="Toggle sidebar" />
+              <img className="w-5 h-5 flex" src={arrow} alt="Toggle sidebar" />
             </button>
           </div>
 
           {/* Map area - Takes remaining space */}
-          {position.length>0 && pharmacyData ? (
-            <div className="flex-1 relative">
+          {position.length > 0 && pharmacyData ? (
+            <div className="md:flex-1  relative">
               <Map data={pharmacyData.all} position={position} />
             </div>
           ) : (

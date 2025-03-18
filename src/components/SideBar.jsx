@@ -3,9 +3,9 @@ import React from 'react'
 const SideBar = ({data}) => {
     console.log(data)
   return (
-    <div>
+    <div className='flex flex-col max-h-96 overflow-y-auto'>
       {/* <p className='ml-3 text-[#92DE46]'>Results</p> */}
-      <p className='text-sm ml-3 text-gray-500'>{data.length} medical services nearby </p>
+      <p className='text-sm ml-3 text-gray-500'>{data?.length} medical services nearby </p>
       {data.map((item) => (
         <div
           key={item.id}

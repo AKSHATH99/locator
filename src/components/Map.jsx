@@ -63,12 +63,12 @@ const Map = ({ data, position }) => {
   // console.log(isHovered)
   return (
     <div className="z-0">
-      <div style={{ height: "80vh", width: "70vw" }}>
+      <div className="h-[80vh] md:w-[80vw] w-[100vw]">  
         {userPosition ? (
           <MapContainer
             // key={[40.7128, -74.006]} // FIX: Forces re-render when position updates
-            center={[40.7128, -74.006]}
-            zoom={13}
+            center={userPosition}
+            zoom={8}
             style={{ height: "100%", width: "100%" }}
           >
             <TileLayer
