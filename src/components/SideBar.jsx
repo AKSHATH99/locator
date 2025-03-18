@@ -1,7 +1,6 @@
 import React from 'react'
 
 const SideBar = ({data}) => {
-    console.log(data)
   return (
     <div className='flex flex-col max-h-96 overflow-y-auto'>
       {/* <p className='ml-3 text-[#92DE46]'>Results</p> */}

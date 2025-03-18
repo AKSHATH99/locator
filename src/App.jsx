@@ -140,12 +140,10 @@ function App() {
     findUserLocation();
   }, []);
 
-  useEffect(() => {
-    console.log(fetching);
-  }, [fetching]);
+
 
   useEffect(() => {
-    console.log(position);
+    console.log("user Postition >>",position);
   }, [position]);
 
   useEffect(() => {
@@ -159,9 +157,8 @@ function App() {
           radius,
           filter
         );
-        console.log(result.found);
+        // console.log(result.found);
         if (!result.found) {
-          console.log("no data hahah  ");
           notify(`No nearby ${filter} found`);
         }
         setPharmacyData(result);
@@ -174,9 +171,9 @@ function App() {
     fetchNearestStore();
   }, [position, radius, filter]);
 
-  useEffect(() => {
-    console.log("pharmacyData>>", pharmacyData.found);
-  }, [pharmacyData]);
+  // useEffect(() => {
+  //   console.log("pharmacyData>>", pharmacyData.found);
+  // }, [pharmacyData]);
 
   return (
     <div className="h-max w-max bg-gray-50 ">

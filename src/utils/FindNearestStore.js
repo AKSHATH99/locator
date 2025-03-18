@@ -6,7 +6,7 @@ export default async function findNearestStore(
   radius = 1000,
   filter = "pharmacy"
 ) {
-  console.log("in module >>", latitude ,longitude , radius , filter)
+  // console.log("in module >>", latitude ,longitude , radius , filter)
   const overpassURL = "https://overpass-api.de/api/interpreter";
 
   const query = `
@@ -38,7 +38,7 @@ export default async function findNearestStore(
 
 
     const data = await response.json();
-    console.log(data)
+    // console.log(data)
     
     // If no pharmacies found
     if (!data.elements || data.elements.length === 0) {
@@ -80,7 +80,7 @@ export default async function findNearestStore(
       })
       .sort((a, b) => a.distance - b.distance);
       
-      console.log("pharmacies>>", pharmacies)
+      // console.log("pharmacies>>", pharmacies)
       return {
         found: pharmacies.length > 0,
         total: pharmacies.length,

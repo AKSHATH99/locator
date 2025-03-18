@@ -58,24 +58,24 @@ const Map = ({ data, position }) => {
   const [userPosition , setUserPosition] = useState(null)
 
   useEffect(() => {
-    console.log("in map component ",position)
+    // console.log("in map component ",position)
     setPharmacyData(data);
     setUserPosition(position)
     console.log("Change in positon", position)
   }, [data , position]);
 
-  useEffect(()=>{
-    console.log(selectedStore)
-  },[selectedStore])
+  // useEffect(()=>{
+  //   console.log(selectedStore)
+  // },[selectedStore])
 
   useEffect(()=>{
     setPharmacyData(data);
     setUserPosition(position)
   },[])
 
-  useEffect(()=>{
-    console.log("in map component data setted >>",pharmacyData)
-  },[pharmacyData])
+  // useEffect(()=>{
+  //   console.log("in map component data setted >>",pharmacyData)
+  // },[pharmacyData])
 
   // console.log(isHovered)
   return (
