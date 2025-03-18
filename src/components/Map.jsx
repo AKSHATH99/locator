@@ -10,6 +10,18 @@ import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import { useMap } from "react-leaflet";
 import RoutingMachine from "./RoutingMachine";
 
+const ChangeMapView = ({ position }) => {
+  const map = useMap();
+  
+  useEffect(() => {
+    if (position) {
+      map.setView(position, map.getZoom());
+    }
+  }, [position, map]);
+  
+  return null;
+};
+
 const customIcon = L.icon({
   iconUrl: markerIconPng,
   shadowUrl: markerShadowPng,
@@ -57,6 +69,11 @@ const Map = ({ data, position }) => {
   },[selectedStore])
 
   useEffect(()=>{
+    setPharmacyData(data);
+    setUserPosition(position)
+  },[])
+
+  useEffect(()=>{
     console.log("in map component data setted >>",pharmacyData)
   },[pharmacyData])
 
@@ -71,6 +88,7 @@ const Map = ({ data, position }) => {
             zoom={8}
             style={{ height: "100%", width: "100%" }}
           >
+            <ChangeMapView position={userPosition} />
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
